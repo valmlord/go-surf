@@ -1,4 +1,46 @@
-h1, h2, h3, h4, h5, h6, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul, li {
     margin: 0;
     padding: 0;
+    color: white;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: $bg-color;
+    color: white;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.suptitle-left {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-left: 103px;
+    position: relative;
+    display: inline-block;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: white;
+        left: 0;
+        top: 50%
+    }
 }
