@@ -8,6 +8,7 @@
         "url": "https://github.com/valmlord/go-surf.git"
     },
     "scripts": {
+        "deploy": "gh-pages -d dist",
         "dev": "gulp",
         "build": "gulp prod --production",
         "build:views": "gulp views --production",
@@ -75,6 +76,8 @@
     },
     "dependencies": {
         "dev": "^0.1.3",
+        "gh-pages": "^4.0.0",
+        "gh-pages-deploy": "^0.5.1",
         "jquery": "^3.6.0",
         "slick-carousel": "^1.8.1",
         "webpack": "^5.70.0",
