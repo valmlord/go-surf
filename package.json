@@ -8,7 +8,8 @@
         "url": "https://github.com/valmlord/go-surf.git"
     },
     "scripts": {
-        "deploy": "gh-pages -d dist",
+        "deploy": "gh-pages-deploy",
+        "clean-source": "rimraf README.md src webroot package.json",
         "dev": "gulp",
         "build": "gulp prod --production",
         "build:views": "gulp views --production",
